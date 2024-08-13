@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a shigye</title>
+    <style>
+        body {
+            background: linear-gradient(270deg, #1b2df5, #0cbbeb);
+            background-size: 800% 800%;
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: gradientAnimation 7s ease infinite;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 50%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto;
+            animation: logoAnimation 10s infinite alternate;
+            transition: transform 0.3s;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes logoAnimation {
+            0% { filter: drop-shadow(0 0 10px #ffd700); }
+            50% { filter: drop-shadow(0 0 10px #fffacd); }
+            100% { filter: drop-shadow(0 0 10px #ffd700); }
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1.5em;
+            text-decoration: none;
+            font-size: 1.2em;
+            position: relative;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        nav a:hover {
+            animation: bounce 0.6s;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .welcome {
+            text-align: center;
+            padding: 5em 2em;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+        .welcome h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .welcome p {
+            font-size: 1.5em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 3em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo de la Tienda de Relojes">
+        <h1>shigye</h1>
+    </header>
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        <a href="politica_privacidad.html">Política de Privacidad</a>
+        <a href="registro.html">Registro</a>
+        <a href="login.html">Login</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="welcome">
+        <h1>Bienvenidos a shigye</h1>
+        <p>Explore nuestra exclusiva colección de relojes de lujo, deportivos, clásicos y extraterrestres. Encuentra el reloj perfecto que se adapte a tu estilo y necesidades. Ofrecemos productos de alta calidad a precios competitivos.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 shigye.</p>
+    </footer>
+</body>
+</html>
